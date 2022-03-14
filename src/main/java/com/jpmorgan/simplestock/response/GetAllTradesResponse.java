@@ -1,0 +1,34 @@
+/*
+ * This code contains copyright information which is the proprietary property
+ * of Mohit Jain Solutions. No part of this code may be reproduced,
+ * stored or transmitted in any form without the prior written permission of
+ * Mohit Jain Solutions.
+ *
+ * Copyright Mohit Jain 2022
+ * Confidential. All rights reserved.
+ */
+package com.jpmorgan.simplestock.response;
+
+import java.util.List;
+
+import com.jpmorgan.simplestock.request.Trade;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+/**
+ * Test class for stock data.
+ * @author Mohit.3.Jain
+ *
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
+public class GetAllTradesResponse extends CodeMessageResponse {
+    
+	/**List of Trade.*/
+	private List<Trade> trades;
+}
